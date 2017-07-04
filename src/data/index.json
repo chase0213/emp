@@ -1,0 +1,11 @@
+{
+  "version": "2017-07-04",
+  "posts": [
+    {
+      "tag": ["Angular", "RxJS"],
+      "title": "Sample application using Angular and RxJS",
+      "src": "",
+      "image": ""
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 main {
-
   min-height: calc(100% - 300px);
 
   @media (min-width: 768px) {
@@ -9,10 +8,15 @@ main {
   }
 }
 
+.main-container {
+  flex-basis: 100%;
+}
+
 app-aside-navigation {
   @media (min-width: 768px) {
-    flex-basis: 200px;
-    min-width: 200px;
+    flex-basis: 320px;
+    min-width: 320px;
+    height: 100%;
   }
 }
 

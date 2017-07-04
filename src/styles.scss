@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  background: #f0f0f0;
   font-size: 16px;
 
   // モバイルはやや小さめ
@@ -106,6 +107,11 @@ a, button {
 
   &.google-plus {
     background: $google-plus-color !important;
+    color: #fff !important;
+  }
+
+  &.hatena {
+    background: $hatena-color !important;
     color: #fff !important;
   }
 }

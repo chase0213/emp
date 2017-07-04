@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from '@angular/material';
+import { HttpModule } from '@angular/http';
 
 import { BlogService } from './services/blog.service';
 
@@ -23,6 +24,7 @@ import { AsideNavigationComponent } from './components/aside-navigation/aside-na
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     MaterialModule,
     AppRoutingModule
   ],
