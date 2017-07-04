@@ -1,0 +1,32 @@
+//
+// fonts
+//
+$default-gothic-font: Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+$default-mincho-font: "Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+$default-font: $default-gothic-font;
+$code-fonts: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+//
+// colors
+//
+$color-white: #ffffff;
+$color-green: #009688;
+$color-skyblue: #00A8D5;
+$color-light-orange: #ffa500;
+
+// colors of codes
+$color-code-reserved: #a71d5d;
+$color-code-function: #0086b3;
+$color-code-variable: #0086b3;
+$color-code-property: #a71d5d;
+$color-code-string: #183691;
+$color-code-class: #ed6a43;
+
+$facebook-color: #3c5b9b;
+$twitter-color: #2daae1;
+$google-plus-color: #f63e28;
+$github-color: #000;
+$linkedin-color: #0173b2;
+$tumblr-color: #36465d;
+$instagram-color: #0d3c5f;
+$other-color: #c0c0c0;

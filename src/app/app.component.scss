@@ -1,0 +1,21 @@
+main {
+
+  min-height: calc(100% - 300px);
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+app-aside-navigation {
+  @media (min-width: 768px) {
+    flex-basis: 200px;
+    min-width: 200px;
+  }
+}
+
+router-outlet {
+  display: none;
+}
