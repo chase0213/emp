@@ -2,7 +2,7 @@
   <div class="nav-container">
     <h5>記事カテゴリ</h5>
     <md-chip-list class="category-tag-container">
-      <md-chip>カテゴリA</md-chip>
+      <md-chip *ngFor="let tag of tags$ | async" (click)="onClickTag($event, tag)">{{ tag }}</md-chip>
     </md-chip-list>
   </div>
 </aside>

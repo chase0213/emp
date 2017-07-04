@@ -1,69 +1,20 @@
 <article>
   <section>
 
-    <md-card>
+    <md-card *ngFor="let post of (blog$ | async)?.posts">
       <md-card-title>
-        Title!
+        {{ post.title }}
       </md-card-title>
       <md-card-subtitle>
-        Laboris est commodo enim nulla esse exercitation duis magna fugiat.
+        <md-chip-list>
+          <md-chip *ngFor="let chip of post.tag">
+            {{ chip }}
+          </md-chip>
+        </md-chip-list>
       </md-card-subtitle>
-        Commodo tempor labore occaecat qui in amet proident. Ipsum cillum excepteur qui consectetur cillum elit. Irure est aliqua sint minim incididunt ut cupidatat. Cillum aliquip et consequat dolore sunt enim. Dolore dolor elit ea eiusmod culpa occaecat proident.
+        {{ post.abstract }}
       <md-card-content>
       </md-card-content>
-
-    </md-card>
-
-    <md-card>
-      <md-card-title>
-        Title!
-      </md-card-title>
-      <md-card-subtitle>
-        Laboris est commodo enim nulla esse exercitation duis magna fugiat.
-      </md-card-subtitle>
-        Commodo tempor labore occaecat qui in amet proident. Ipsum cillum excepteur qui consectetur cillum elit. Irure est aliqua sint minim incididunt ut cupidatat. Cillum aliquip et consequat dolore sunt enim. Dolore dolor elit ea eiusmod culpa occaecat proident.
-      <md-card-content>
-      </md-card-content>
-
-    </md-card>
-
-    <md-card>
-      <md-card-title>
-        Title!
-      </md-card-title>
-      <md-card-subtitle>
-        Laboris est commodo enim nulla esse exercitation duis magna fugiat.
-      </md-card-subtitle>
-        Commodo tempor labore occaecat qui in amet proident. Ipsum cillum excepteur qui consectetur cillum elit. Irure est aliqua sint minim incididunt ut cupidatat. Cillum aliquip et consequat dolore sunt enim. Dolore dolor elit ea eiusmod culpa occaecat proident.
-      <md-card-content>
-      </md-card-content>
-
-    </md-card>
-
-    <md-card>
-      <md-card-title>
-        Title!
-      </md-card-title>
-      <md-card-subtitle>
-        Laboris est commodo enim nulla esse exercitation duis magna fugiat.
-      </md-card-subtitle>
-        Commodo tempor labore occaecat qui in amet proident. Ipsum cillum excepteur qui consectetur cillum elit. Irure est aliqua sint minim incididunt ut cupidatat. Cillum aliquip et consequat dolore sunt enim. Dolore dolor elit ea eiusmod culpa occaecat proident.
-      <md-card-content>
-      </md-card-content>
-
-    </md-card>
-
-    <md-card>
-      <md-card-title>
-        Title!
-      </md-card-title>
-      <md-card-subtitle>
-        Laboris est commodo enim nulla esse exercitation duis magna fugiat.
-      </md-card-subtitle>
-        Commodo tempor labore occaecat qui in amet proident. Ipsum cillum excepteur qui consectetur cillum elit. Irure est aliqua sint minim incididunt ut cupidatat. Cillum aliquip et consequat dolore sunt enim. Dolore dolor elit ea eiusmod culpa occaecat proident.
-      <md-card-content>
-      </md-card-content>
-
     </md-card>
 
   </section>

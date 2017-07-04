@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogService } from '../../services/blog.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-blog-index',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogIndexComponent implements OnInit {
 
-  constructor() { }
+  blog$: Observable<any>;
+  tags$: Observable<string>;
+
+  constructor(
+    public bs: BlogService,
+  ) { }
 
   ngOnInit() {
+    this.blog$ = this.bs.index();
   }
 
 }
