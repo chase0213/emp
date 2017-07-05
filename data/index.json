@@ -1,6 +1,27 @@
 {
-  "version": "2017-07-04",
+  "version": "2017-07-06",
   "posts": [
+    {
+      "tag": ["TypeScript", "AltJS", "istanbul", "report", "codecov"],
+      "title": "codecov で altjs (typescript) のカバレッジを報告に手間取った話",
+      "abstract": "codecov で typescript のカバレッジを報告しようとしたら、 no-reports-generated error=Error となってグラフが表示されなかった話です。",
+      "src": "code-coverage-for-typescript.md",
+      "image": ""
+    },
+    {
+      "tag": ["JavaScript", "TypeScript", "ES6", "extdate"],
+      "title": "JavaScript の Dateオブジェクトを Rails-like に使いたい",
+      "abstract": "JavaScript の Dateオブジェクトは色々と悪名高く、その代替ライブラリは片手で数え切れないほど存在する。有名どころで言えば、moment、Datejs などがある。しかし私は Rails の Timeオブジェクトに魅せられてからというもの、その使用感が忘れられなくなってしまい、どうにかして js や ts でも使えないものかと苛立ちと悲しみの間で煩悶していた最中、ついにその感情が溢れ出てしまい、自分で実装してしまった次第である。",
+      "src": "extdate.md",
+      "image": ""
+    },
+    {
+      "tag": ["fast-tree", "Nested Set Model", "Tree Structure", "Graph"],
+      "title": "Rails でツリー構造をシリアライズして RDB に持つことに抵抗があるときに読む投稿",
+      "abstract": "ツリー構造を Rails で扱う方法を簡単に調査して、結局自分で作りました。僕は、適当にツリーっぽいものを構築した後で、一気にガチャってツリーを再構築できるようなメソッドだったり、オブジェクトからツリーを構築できるメソッドだったりが欲しいんですけど、そういうリクエストやバグがあれば github の issues/pull-requests に投げていただければ幸いです。できればそれほど大きくない限り PR の方が良いです。",
+      "src": "introduction-to-fast-tree.md",
+      "image": ""
+    },
     {
       "tag": ["Jubatus", "Online Machine Learning", "Clustering", "Prediction"],
       "title": "Jubatus で市区町村名から都道府県を予測してみる話",
@@ -17,7 +38,7 @@
     },
     {
       "tag": ["Jubatus", "Online Machine Learning", "Anormal Detection"],
-      "title": "Jubatus で facebook への不正ログインを検知したい話(1)",
+      "title": "Jubatus で facebook への不正ログインを検知したい話（1）",
       "abstract": "facebook上で誰がどこからこのアカウントにログインしたか、などがわかるので、これを使って不正アクセスを見抜こうというものです。",
       "src": "jubatus-trial-03.md",
       "image": ""
