@@ -1,0 +1,17 @@
+@import '../../../variables';
+
+article {
+  width: 100%;
+}
+
+md-card {
+  display: inline-block;
+  margin: 8px 12px;
+  width: calc(100% - 24px);
+}
+
+md-card-title {
+  color: $color-skyblue;
+  font-size: 1.8rem;
+  padding: .4rem 0 1rem;
+}

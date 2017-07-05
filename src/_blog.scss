@@ -1,0 +1,17 @@
+.blog-body {
+
+  h1 {
+    border-bottom: 1px solid $color-skyblue;
+    box-shadow: 0 1px 0 0 #c0c0c0;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    margin: .8em 0 .4em;
+  }
+
+  p {
+    font-size: 1.0rem;
+    line-height: 1.8;
+  }
+}

@@ -3,7 +3,10 @@ import { Http } from '@angular/http';
 
 import { Observable } from 'rxjs/Observable';
 
-const INDEX_URL = 'https://raw.githubusercontent.com/chase0213/emp/master/data/index.json?token=ABbTgZ1wIkTku3iqtJVF8E7ZrMb_Oghlks5ZZQQLwA%3D%3D';
+declare const marked: any;
+
+const INDEX_URL = 'https://raw.githubusercontent.com/chase0213/emp/master/data/index.json';
+const SHOW_BASE_URL = 'https://raw.githubusercontent.com/chase0213/emp/master/data/posts/';
 
 @Injectable()
 export class BlogService {
@@ -15,6 +18,36 @@ export class BlogService {
   index(): Observable<any> {
     const url = INDEX_URL;
     return this.http.get(url).map(data => data.json()).first();
+  }
+
+  get(src: string): Observable<any> {
+    const url = SHOW_BASE_URL + src + '.md';
+    marked.setOptions({
+      renderer: new marked.Renderer(),
+      gfm: true,
+      tables: true,
+      breaks: false,
+      pedantic: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false
+    });
+    return this.http.get(url).map(data => marked(data.text())).first();
+  }
+
+  getTitle(src: string): Observable<string> {
+    return Observable.create(obs => {
+      this.index().subscribe(list => {
+        for (let item of list.posts) {
+          if (item.src === src) {
+            obs.next(item.title);
+            obs.complete();
+            return;
+          }
+        }
+        obs.error('Title for "' + src + '" not found.');
+      });
+    });
   }
 
   tags(): Observable<string> {

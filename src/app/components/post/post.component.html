@@ -3,13 +3,14 @@
 
     <md-card>
       <md-card-title>
-        Title!
+        {{ title$ | async }}
       </md-card-title>
       <md-card-subtitle>
 
       </md-card-subtitle>
 
       <md-card-content>
+        <div class="blog-body" [innerHTML]="blog$ | async"></div>
       </md-card-content>
 
     </md-card>
