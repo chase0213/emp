@@ -3,7 +3,9 @@
 
     <md-card *ngFor="let post of (blog$ | async)?.posts">
       <md-card-title>
-        {{ post.title }}
+        <a [routerLink]="['/posts', post.src]">
+          {{ post.title }}
+        </a>
       </md-card-title>
       <md-card-subtitle>
         <md-chip-list>
