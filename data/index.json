@@ -1,6 +1,13 @@
 {
-  "version": "2017-07-06",
+  "version": "2017-12-14",
   "posts": [
+    {
+      "tag": ["Python3", "scikit-learn", "Machine Learning", "Random Forest"],
+      "title": "家計簿の出費項目にカテゴリを付けるのを自動化する",
+      "abstract": "Random Forestアルゴリズムを使用して、過去のクレジットカード使用履歴を学習することにより、支出のカテゴライズを行う",
+      "src": "categorize-expenses",
+      "image": ""
+    },
     {
       "tag": ["TypeScript", "AltJS", "istanbul", "report", "codecov"],
       "title": "codecov で altjs (typescript) のカバレッジを報告に手間取った話",
@@ -23,21 +30,21 @@
       "image": ""
     },
     {
-      "tag": ["Jubatus", "Online Machine Learning", "Clustering", "Prediction"],
+      "tag": ["Jubatus", "Machine Learning", "Clustering", "Prediction"],
       "title": "Jubatus で市区町村名から都道府県を予測してみる話",
       "abstract": "Jubatus を使ってみた、という記事です。まず何をしたいかというと、市町村名を入力したらどこの都道府県の地名かを教えてくれるものを作ります。目的が「使ってみる」なので、対象ははっきり言って何でも良かったのですが、",
       "src": "jubatus-trial-01",
       "image": ""
     },
     {
-      "tag": ["Jubatus", "Online Machine Learning", "Clustering"],
+      "tag": ["Jubatus", "Machine Learning", "Clustering"],
       "title": "Jubatus で記事連動広告を表示したい話",
       "abstract": "そういえば今更ですが昨年の10月に Jubatus Hackathon #1 に参加してきました。 http://connpass.com/event/8233/ 発表時のスライドはこちらに綺麗にまとめていただいているので、ご参考にどうぞ。 http://blog.jubat.us/2014/10/jubatus.html",
       "src": "jubatus-trial-02",
       "image": ""
     },
     {
-      "tag": ["Jubatus", "Online Machine Learning", "Anormal Detection"],
+      "tag": ["Jubatus", "Machine Learning", "Anormal Detection"],
       "title": "Jubatus で facebook への不正ログインを検知したい話（1）",
       "abstract": "facebook上で誰がどこからこのアカウントにログインしたか、などがわかるので、これを使って不正アクセスを見抜こうというものです。",
       "src": "jubatus-trial-03",
