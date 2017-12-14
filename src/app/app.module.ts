@@ -10,12 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BlogService } from './services/blog.service';
 
-import { AppRoutingModule } from './app-routing.module';
+import { ROUTES } from './app.routes';
+
 import { AppComponent } from './app.component';
 import { BlogIndexComponent } from './components/blog-index/blog-index.component';
 import { PostComponent } from './components/post/post.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RouterModule } from '@angular/router/src/router_module';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MatCardModule,
     MatChipsModule,
 
-    AppRoutingModule
+    RouterModule.forRoot(ROUTES, { useHash: true }),
   ],
   providers: [
     BlogService,

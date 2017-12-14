@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BlogIndexComponent } from './components/blog-index/blog-index.component';
 import { PostComponent } from './components/post/post.component';
 
-const routes: Routes = [
+export const ROUTES: Routes = [
   {
     path: '',
     children: [
@@ -15,9 +15,3 @@ const routes: Routes = [
     ]
   }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
