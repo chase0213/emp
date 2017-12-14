@@ -20,14 +20,14 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 // that you are using.
 @include angular-material-theme($candy-app-theme);
 
-a.md-raised-button {
+a.mat-raised-button {
   &:link, &:hover, &:visited {
     color: #ffffff;
   }
 }
 
-md-chip-list {
-  md-chip {
+mat-chip-list {
+  mat-chip {
     margin-left: 0px !important;
     margin-right: 4px !important;
     margin-bottom: .4em !important;

@@ -1,23 +1,23 @@
 <article>
   <section>
 
-    <md-card *ngFor="let post of (blog$ | async)?.posts">
-      <md-card-title>
+    <mat-card *ngFor="let post of (blog$ | async)?.posts">
+      <mat-card-title>
         <a [routerLink]="['/posts', post.src]">
           {{ post.title }}
         </a>
-      </md-card-title>
-      <md-card-subtitle>
-        <md-chip-list>
-          <md-chip *ngFor="let chip of post.tag">
+      </mat-card-title>
+      <mat-card-subtitle>
+        <mat-chip-list>
+          <mat-chip *ngFor="let chip of post.tag">
             {{ chip }}
-          </md-chip>
-        </md-chip-list>
-      </md-card-subtitle>
+          </mat-chip>
+        </mat-chip-list>
+      </mat-card-subtitle>
         {{ post.abstract }}
-      <md-card-content>
-      </md-card-content>
-    </md-card>
+      <mat-card-content>
+      </mat-card-content>
+    </mat-card>
 
   </section>
 </article>

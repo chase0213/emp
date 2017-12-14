@@ -19,7 +19,7 @@ export class PostComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this._route.params.first().subscribe(params => {
+    this._route.params.subscribe(params => {
       if (params['id']) {
         this.title$ = this.bs.getTitle(params['id']);
         this.blog$ = this.bs.get(params['id']);

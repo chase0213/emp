@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MaterialModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatChipsModule,
+} from '@angular/material';
 import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BlogService } from './services/blog.service';
 
@@ -25,7 +30,12 @@ import { AsideNavigationComponent } from './components/aside-navigation/aside-na
   imports: [
     BrowserModule,
     HttpModule,
-    MaterialModule,
+
+    // Material Module
+    MatButtonModule,
+    MatCardModule,
+    MatChipsModule,
+
     AppRoutingModule
   ],
   providers: [
