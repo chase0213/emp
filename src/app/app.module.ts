@@ -17,7 +17,7 @@ import { BlogIndexComponent } from './components/blog-index/blog-index.component
 import { PostComponent } from './components/post/post.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { RouterModule } from '@angular/router/src/router_module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
