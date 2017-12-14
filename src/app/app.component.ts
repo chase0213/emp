@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BlogService } from './services/blog.service';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  constructor(
+    public bs: BlogService,
+  ) {}
+
+  onSelectTag(tag: string) {
+    this.bs.selectTag(tag);
+  }
 }

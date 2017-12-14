@@ -1,8 +1,0 @@
-<aside>
-  <div class="nav-container">
-    <h5>記事カテゴリ</h5>
-    <mat-chip-list class="category-tag-container">
-      <mat-chip *ngFor="let tag of tags$ | async" (click)="onClickTag($event, tag)">{{ tag }}</mat-chip>
-    </mat-chip-list>
-  </div>
-</aside>

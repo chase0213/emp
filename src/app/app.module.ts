@@ -5,7 +5,7 @@ import {
   MatCardModule,
   MatChipsModule,
 } from '@angular/material';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BlogService } from './services/blog.service';
@@ -16,7 +16,6 @@ import { BlogIndexComponent } from './components/blog-index/blog-index.component
 import { PostComponent } from './components/post/post.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AsideNavigationComponent } from './components/aside-navigation/aside-navigation.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +24,10 @@ import { AsideNavigationComponent } from './components/aside-navigation/aside-na
     PostComponent,
     HeaderComponent,
     FooterComponent,
-    AsideNavigationComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
 
     // Material Module
     MatButtonModule,

@@ -1,23 +1,40 @@
-<article>
-  <section>
+<main>
+  <div class="main-container">
+    <article>
+      <section>
 
-    <mat-card *ngFor="let post of (blog$ | async)?.posts">
-      <mat-card-title>
-        <a [routerLink]="['/posts', post.src]">
-          {{ post.title }}
-        </a>
-      </mat-card-title>
-      <mat-card-subtitle>
-        <mat-chip-list>
-          <mat-chip *ngFor="let chip of post.tag">
-            {{ chip }}
-          </mat-chip>
-        </mat-chip-list>
-      </mat-card-subtitle>
-        {{ post.abstract }}
-      <mat-card-content>
-      </mat-card-content>
-    </mat-card>
+        <mat-card *ngFor="let post of postsInView">
+          <mat-card-title>
+            <a [routerLink]="['/posts', post.src]">
+              {{ post.title }}
+            </a>
+          </mat-card-title>
+          <mat-card-subtitle>
+            <mat-chip-list>
+              <mat-chip *ngFor="let chip of post.tag">
+                {{ chip }}
+              </mat-chip>
+            </mat-chip-list>
+          </mat-card-subtitle>
+            {{ post.abstract }}
+          <mat-card-content>
+          </mat-card-content>
+        </mat-card>
 
-  </section>
-</article>
+      </section>
+    </article>
+  </div>
+
+  <aside class="aside-navigation">
+    <div class="nav-container">
+      <h5>記事カテゴリ</h5>
+      <mat-chip-list class="category-tag-container">
+        <mat-chip *ngFor="let tag of tags$ | async"
+                  (click)="onClickTag($event, tag)"
+                  [ngClass]="{'mat-chip-selected': !!bs.selectedTags[tag]}">
+          {{ tag }}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+  </aside>
+</main>
